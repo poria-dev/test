@@ -178,6 +178,9 @@
   .table {
     display: table;
   }
+  .w-1\.5 {
+    width: calc(var(--spacing) * 1.5);
+  }
   .w-full {
     width: 100%;
   }
