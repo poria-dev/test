@@ -8,7 +8,7 @@ const obj = {
     active: true
 }
 
-
+let first = "mr_Pooria"
 if (name == "pori") {
     console.log("welcome");
 
