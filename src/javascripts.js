@@ -11,10 +11,18 @@ if (name == "pori") {
 }
 
 
-const age =confirm("are you sure !")
+const age = confirm("are you sure !")
 
-if(age==true){
+if (age == true) {
     console.log("complite")
-}else{
+} else {
     console.log("no login ")
+}
+
+
+const func = () => {
+    while (age == "pori") {
+        console.log("hello world");
+
+    }
 }
