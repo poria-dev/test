@@ -19,6 +19,7 @@ if (age == true) {
     console.log("no login ")
 }
 
+let test = 123
 
 const func = () => {
     while (age == "pori") {
