@@ -256,6 +256,11 @@
       background-color: var(--color-amber-300);
     }
   }
+  .\*\:py-10 {
+    :is(& > *) {
+      padding-block: calc(var(--spacing) * 10);
+    }
+  }
 }
 @property --tw-border-style {
   syntax: "*";
