@@ -26,3 +26,21 @@ const func = () => {
 
     }
 }
+
+
+const funnc = (e)=>{
+
+    return e
+}
+
+let enter_first_name = prompt("please enter you first name ")
+
+if (enter_first_name == "pori" , "rezaee" , "parsa") {
+    
+    console.log("welcome to your web site");
+    
+}
+else {
+    console.log("you can't login please try again");
+    
+}
