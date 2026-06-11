@@ -11,6 +11,7 @@ const obj = {
 console.log(obj.active);
 
 
+let first = "mr_Pooria"
 
 
 if (name == "pori") {
