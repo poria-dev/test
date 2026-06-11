@@ -8,6 +8,9 @@ const obj = {
     active: true
 }
 
+console.log(obj.active);
+
+
 
 if (name == "pori") {
     console.log("welcome");
