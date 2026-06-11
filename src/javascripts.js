@@ -8,6 +8,19 @@ const obj = {
     active: true
 }
 
+
+const light =document.getElementById("#demo")
+const click =document.getElementsByClassName("click")
+
+
+click.addeventlistener("click" , ()=>{
+
+light.classList.toggle("dem")
+
+})
+
+
+
 console.log(obj.active);
 
 

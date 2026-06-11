@@ -6,6 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="src/output.css">
 </head>
+
+<style>
+
+.dem{
+    opacity: 100%;
+}
+
+</style>
 <body>
     
 
@@ -36,6 +44,26 @@
     <div class="bg-sky-300 w-62.5 h-62.5 flex justify-center items-center">
         <h4 class="text-2xl font-bold">Lorem, ipsum dolor.</h4>
     </div>
+
+    <div class="w-full h-100 flex justify-center items-center">
+
+    <button class="cursor-pointer mx-10 bg-amber-400 p-4 rounded-2xl capitalize font-bold text-2xl" onclick="document.getElementById('demo2').style.opacity='100%' ">click light</button>
+
+
+       <div class="rounded-2xl w-50 h-60 bg-blue-800 flex justify-center items-center relative">
+
+         <img src="src/img/pic_bulboff.gif" alt="" class="absolute" id="demo1">
+         <img src="src/img/pic_bulbon.gif" alt="" class="click absolute opacity-0" id="demo2" >
+
+       </div>
+
+    <button class="cursor-pointer mx-10 bg-amber-400 p-4 rounded-2xl capitalize font-bold text-2xl" onclick="document.getElementById('demo2').style.opacity='0' ">click off 0</button>
+
+
+
+
+    </div>
+
 </body>
-<script src="src/javascripts.js"></script>
+<!-- <script src="src/javascripts.js"></script> -->
 </html>
