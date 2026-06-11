@@ -10,6 +10,7 @@
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-amber-500: oklch(76.9% 0.188 70.08);
+    --color-sky-300: oklch(82.8% 0.111 230.318);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
@@ -178,8 +179,26 @@
   .table {
     display: table;
   }
+  .h-62\.5 {
+    height: calc(var(--spacing) * 62.5);
+  }
+  .h-\[250\] {
+    height: 250;
+  }
+  .h-\[250px\] {
+    height: 250px;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\.5 {
     width: calc(var(--spacing) * 1.5);
+  }
+  .w-62\.5 {
+    width: calc(var(--spacing) * 62.5);
+  }
+  .w-\[250px\] {
+    width: 250px;
   }
   .w-full {
     width: 100%;
@@ -192,6 +211,12 @@
   }
   .flex-wrap {
     flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .justify-evenly {
     justify-content: space-evenly;
@@ -208,6 +233,9 @@
   }
   .bg-amber-500 {
     background-color: var(--color-amber-500);
+  }
+  .bg-sky-300 {
+    background-color: var(--color-sky-300);
   }
   .text-2xl {
     font-size: var(--text-2xl);
