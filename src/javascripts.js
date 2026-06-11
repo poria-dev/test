@@ -1,5 +1,5 @@
 let name = prompt("enter your name")
-
+const valuess = "pooria rezaee 0"
 
 
 if (name == "pori") {
