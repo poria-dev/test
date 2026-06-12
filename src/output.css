@@ -197,17 +197,8 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
-  .h-25 {
-    height: calc(var(--spacing) * 25);
-  }
   .h-60 {
     height: calc(var(--spacing) * 60);
-  }
-  .h-62 {
-    height: calc(var(--spacing) * 62);
   }
   .h-62\.5 {
     height: calc(var(--spacing) * 62.5);
@@ -215,17 +206,8 @@
   .h-100 {
     height: calc(var(--spacing) * 100);
   }
-  .h-\[100px\] {
-    height: 100px;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\.5 {
     width: calc(var(--spacing) * 1.5);
-  }
-  .w-9 {
-    width: calc(var(--spacing) * 9);
   }
   .w-9\/10 {
     width: calc(9 / 10 * 100%);
@@ -233,29 +215,17 @@
   .w-50 {
     width: calc(var(--spacing) * 50);
   }
-  .w-62 {
-    width: calc(var(--spacing) * 62);
-  }
   .w-62\.5 {
     width: calc(var(--spacing) * 62.5);
   }
-  .w-fit {
-    width: fit-content;
-  }
   .w-full {
     width: 100%;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -335,15 +305,8 @@
   .capitalize {
     text-transform: capitalize;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-0 {
     opacity: 0%;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .\*\:flex {
     :is(& > *) {
@@ -378,11 +341,6 @@
   .\*\:bg-amber-300 {
     :is(& > *) {
       background-color: var(--color-amber-300);
-    }
-  }
-  .\*\:py-1\.5 {
-    :is(& > *) {
-      padding-block: calc(var(--spacing) * 1.5);
     }
   }
   .\*\:py-10 {
@@ -437,11 +395,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -452,7 +405,6 @@
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }

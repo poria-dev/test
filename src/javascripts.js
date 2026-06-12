@@ -90,22 +90,22 @@ const about_us = {
 
 let chap = prompt("please enter work")
 
-if (chap == "not work"){
+if (chap == "not work") {
 
-    let connf = confirm ("are you sure !")
+    let connf = confirm("are you sure !")
 
     if (connf == true) {
         console.log("i hove idea !");
-        
-    }else{
+
+    } else {
         console.log("try again ...");
-        
+
     }
 }
 else {
 
     console.log("thats good $$$");
-    
+
 }
 
 
