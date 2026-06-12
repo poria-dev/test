@@ -109,5 +109,12 @@ else {
 }
 
 
+let name2 ;
+name2 = "absa"
+console.log(name2);
+
+
+
+
 
 
