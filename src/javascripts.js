@@ -9,13 +9,13 @@ const obj = {
 }
 
 
-const light =document.getElementById("#demo")
-const click =document.getElementsByClassName("click")
+const light = document.getElementById("#demo")
+const click = document.getElementsByClassName("click")
 
 
-click.addeventlistener("click" , ()=>{
+click.addeventlistener("click", () => {
 
-light.classList.toggle("dem")
+    light.classList.toggle("dem")
 
 })
 
@@ -68,8 +68,44 @@ if (enter_first_name == "pori", "rezaee", "parsa") {
 
 }
 else {
+
+
     console.log("you can't login please try again");
 
+
+
+}
+
+
+
+const about_us = {
+
+    name: "pori",
+    age: 20,
+    place: "tehran ",
+    work: "not work",
+
+}
+
+
+let chap = prompt("please enter work")
+
+if (chap == "not work"){
+
+    let connf = confirm ("are you sure !")
+
+    if (connf == true) {
+        console.log("i hove idea !");
+        
+    }else{
+        console.log("try again ...");
+        
+    }
+}
+else {
+
+    console.log("thats good $$$");
+    
 }
 
 
