@@ -1,11 +1,11 @@
-const zahra = prompt("enter your name")
 
-if (zahra.length >= 3) {
+const para = prompt("enter your name")
+if (para.length >= 5) {
 
-    console.log("welcome");
+    document.write("welcome"+ "  " + para)
 
 
 } else {
-    console.log("try again");
+    document.write("try again :"+ "  " +para)
 
 }
