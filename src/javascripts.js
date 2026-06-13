@@ -7,6 +7,7 @@ const obj = {
     age: 21,
     active: true
 }
+let user_uniqe = "efqwfqwfwf"
 
 
 const light = document.getElementById("#demo")
