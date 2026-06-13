@@ -71,6 +71,9 @@ console.log(84 <= 20);
 console.log(41 != 10);
 console.log(10 != 10);
 
+console.log(12 >= 10);
+console.log(110 != 101);
+
 
 
 
