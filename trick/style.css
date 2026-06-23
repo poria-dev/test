@@ -1,0 +1,51 @@
+.dark{
+    background-color: black;
+    >h2{
+        color: white;
+        cursor: pointer;
+    }
+}
+
+
+.box {
+    width: 30%;
+    height: 70vh;
+    background-color: rgb(254, 254, 254);
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 20%);
+    scale: 0;
+    z-index: 100000;
+    transition: 0.4s;
+    box-shadow: 0 0px 80px black;
+    >span {
+        margin: 0 10px;
+        cursor: pointer;
+       
+        
+
+
+    }
+}
+#btn{
+    border: none;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    cursor: pointer;
+    width: 15%;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-image: linear-gradient(150deg ,rgb(207, 169, 175) 10%, rgb(105, 105, 198) 80%);
+    font-size: 25px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    transition: 0.8s;
+    &:hover{
+        transition: 1s;
+        background-image: linear-gradient(150deg ,rgb(218, 125, 12) 10%, rgb(137, 196, 35) 80%);
+    }
+}
