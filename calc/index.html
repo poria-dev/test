@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: 'Tahoma', sans-serif;
+        background: linear-gradient(135deg, #e0f7fa, #80deea);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    /* ---------- استایل ورودیها ---------- */
+    input[type="text"] {
+        width: 120px;
+        padding: 8px 12px;
+        margin: 5px;
+        border: 1px solid #0097a7;
+        border-radius: 4px;
+        font-size: 1rem;
+        text-align: center;
+        transition: border 0.3s, box-shadow 0.3s;
+    }
+
+    input[type="text"]:focus {
+        outline: none;
+        border-color: #006064;
+        box-shadow: 0 0 5px rgba(0, 96, 100, 0.5);
+    }
+
+    /* ---------- دکمهها ---------- */
+    button {
+        min-width: 45px;
+        padding: 8px 12px;
+        margin: 5px;
+        background: #00acc1;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.1s;
+    }
+
+    button:hover {
+        background: #00838f;
+    }
+
+    button:active {
+        transform: scale(0.95);
+    }
+
+    /* ---------- نمایش نتیجه ---------- */
+    #h2 {
+        margin-top: 20px;
+        font-size: 2rem;
+        color: #006064;
+    }
+
+    /* ---------- رسپانسیو ---------- */
+    @media (max-width: 480px) {
+
+        input[type="text"],
+        button {
+            width: 90px;
+            font-size: 0.9rem;
+        }
+
+        #h2 {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+
+<body>
+
+    <input type="text" placeholder="num1">
+    <input type="text" placeholder="num2">
+
+    <button onclick="op('+')">+</button>
+    <button onclick="op('-')">-</button>
+    <button onclick="op('*')">*</button>
+    <button onclick="op('/')">/</button>
+
+    <button onclick="sum()">=</button>
+
+    <h2 id="h2"></h2>
+
+
+
+</body>
+<script>
+    const h2 = document.getElementById("h2")
+    const inp = document.querySelectorAll("input")
+
+    function op(sign) {
+        console.log(sign);
+        window.sign = sign
+
+    }
+    function sum() {
+        let error = 0
+        inp[0].style.border = "1px solid black"
+        inp[1].style.border = "1px solid black"
+
+
+        x = Number(inp[0].value)
+        y = Number(inp[1].value)
+
+        if (x == "") {
+            inp[0].style.border = "2px solid red"
+            error++
+        }
+        if (y == "") {
+            inp[1].style.border = "2px solid red"
+            error++
+
+
+        } if (error == 0) {
+            if (sign == "+") {
+                h2.innerHTML = x + y
+            } else if (sign == "-") {
+                h2.innerHTML = x - y
+
+            } else if (sign == "*") {
+                h2.innerHTML = x * y
+            } else if (sign == "/") {
+                if (x == 0 || y == 0) {
+                    alert("try again")
+                } else {
+                    h2.innerHTML = x / y
+                }
+            }
+
+
+        }
+    }
+</script>
+
+</html>
