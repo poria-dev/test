@@ -1,4 +1,9 @@
-div {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ham {
     width: 50px;
     height: 50px;
     border-radius: 20px;
@@ -9,6 +14,7 @@ div {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 100000000000;
 
     >span {
         width: 100%;
@@ -24,4 +30,41 @@ div {
     }
 
 
+}
+.menu{
+    width: 15%;
+    height: 100vh;
+    background-color: rgb(252, 252, 252);
+    position: fixed;
+    top: 15px;
+    left: -100%;
+    transition: 0.4s;
+    box-shadow: 0 0 18px rgb(234, 221, 221) , 1px 1px 36px rgb(216, 214, 214);
+    border: transparent;
+    border-radius: 10px;
+    >ul{
+        width: 100%;
+        height: 40vh;
+        /* border: 1px solid red; */
+        padding-left: 20px;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        >li{
+            width: 55%;
+            font-size: 30px;
+            cursor: pointer;
+            padding-left: 10px;
+            border-radius: 10px;
+            transition: 0.5s;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            &:hover{
+                background-color: chocolate;
+                color: white;
+            }
+            
+            
+        }
+    }
 }
