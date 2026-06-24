@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <input type="text" placeholder="number" id="inp" disabled>
+
+    <div onclick="number(1)">1</div>
+    <div onclick="number(2)">2</div>
+    <div onclick="number(3)">3</div>
+    <div onclick="number(4)">4</div>
+    <div onclick="number(5)">5</div>
+    <div onclick="number(6)">6</div>
+    <div onclick="number(7)">7</div>
+    <div onclick="number(8)">8</div>
+    <div onclick="number(9)">9</div>
+    <div onclick="number(0)">0</div>
+
+    <button onclick="para('+')">+</button>
+    <button onclick="para('-')">-</button>
+    <button onclick="para('*')">*</button>
+    <button onclick="para('/')">/</button>
+    <button onclick="reset()">c</button>
+    <button onclick="sum()">=</button>
+
+    <h2 id="h2"></h2>
+
+</body>
+<script>
+    const inp = document.getElementById("inp")
+
+    const h2 = document.getElementById("h2")
+
+
+    let number1 = 0
+
+    let number2 = 0
+
+    let operitor = ""
+
+
+
+
+    function number(num) {
+
+        inp.value += num
+        console.log(inp.value);
+
+
+        if (operitor === "") {
+            number1 = +inp.value
+        } else {
+            number2 = +inp.value
+        }
+
+
+
+    }
+
+    function para(op) {
+
+        operitor = op
+        inp.value = ""
+
+    }
+
+    function sum() {
+
+        inp.style.border = "1px solid black"
+
+        let error = 0
+        if (inp.value == "") {
+            inp.style.border = "2px solid red"
+            error++
+        }
+
+        if (error == 0) {
+            if (operitor == "+") {
+                h2.innerHTML = number1 + number2
+            }
+            else if (operitor == "-") {
+                h2.innerHTML = number1 - number2
+            }
+            else if (operitor == "*") {
+                h2.innerHTML = number1 * number2
+            }
+            else if (operitor == "/") {
+                h2.innerHTML = number1 / number2
+            }
+            inp.value = ""
+        }
+
+    }
+
+
+    function reset() {
+        inp.value = ""
+        operitor = ""
+        number1 = 0
+        number2 = 0
+        h2.innerHTML = ""
+    }
+</script>
+
+</html>
