@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+div {
+    width: 100px;
+    height: 50px;
+    border: transparent;
+    box-shadow: 0 0 18px cyan;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
